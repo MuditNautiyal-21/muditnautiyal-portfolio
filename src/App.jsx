@@ -1,11 +1,10 @@
 import React from "react";
 
-
 export default function App() {
   return (
     <main className="bg-gray-950 text-white font-sans">
       {/* Hero */}
-      <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
+      <section className="min-h-[75vh] flex flex-col justify-center items-center text-center px-6 relative">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Mudit Nautiyal</h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-6">
           Aspiring Data Scientist | Machine Learning • Forecasting • Data Automation
@@ -13,6 +12,9 @@ export default function App() {
         <div className="flex gap-4">
           <a href="https://github.com/MuditNautiyal-21" className="underline text-blue-400">GitHub</a>
           <a href="https://linkedin.com/in/mudit-nautiyal" className="underline text-blue-400">LinkedIn</a>
+        </div>
+        <div className="absolute bottom-6 animate-bounce text-gray-500 text-sm">
+          ↓ Scroll to explore more ↓
         </div>
       </section>
 
