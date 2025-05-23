@@ -9,28 +9,30 @@
     <title>Mudit Nautiyal | Aspiring Data Scientist</title>
     <meta name="description" content="Machine Learning · Forecasting · Automation projects in one polished portfolio." />
 
-    <!-- ✅ Open Graph (for link previews on WhatsApp, Facebook, LinkedIn) -->
+    <!-- ✅ Open Graph (for sharing on LinkedIn, WhatsApp, etc.) -->
     <meta property="og:title" content="Mudit Nautiyal | Aspiring Data Scientist" />
     <meta property="og:description" content="Machine Learning · Forecasting · Automation projects in one polished portfolio." />
     <meta property="og:image" content="/thumbnail.png" />
     <meta property="og:url" content="https://muditnautiyaldev.netlify.app/" />
     <meta property="og:type" content="website" />
 
-    <!-- ✅ Twitter Card (optional, for Twitter sharing) -->
+    <!-- ✅ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Mudit Nautiyal | Aspiring Data Scientist" />
     <meta name="twitter:description" content="Machine Learning · Forecasting · Automation projects in one polished portfolio." />
     <meta name="twitter:image" content="/thumbnail.png" />
+
+    <!-- ✅ Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EV0C4DVZX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4EV0C4DVZX');
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-
-    <!-- ✅ Dummy hidden form for Netlify to detect -->
-    <form name="contact" netlify hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
   </body>
 </html>
