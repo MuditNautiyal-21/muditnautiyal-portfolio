@@ -1,4 +1,5 @@
 import React from "react";
+import Projects from "./components/Projects";
 
 export default function App() {
   return (
@@ -24,37 +25,7 @@ export default function App() {
       </section>
 
       {/* Projects */}
-      <section className="px-8 py-16 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-10">🔥 Featured Projects</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {/* Project Card 1 */}
-          <div className="bg-gray-800 p-5 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold mb-2">🍷 Wine Forecasting</h3>
-            <p className="text-sm text-gray-300 mb-2">
-              Forecasted wine sales using 7 models. Best RMSE: 9.64 with Holt-Winters.
-            </p>
-            <a href="https://github.com/MuditNautiyal-21/Wine-Forecasting-Project" className="text-blue-400 text-sm underline">View Project</a>
-          </div>
-
-          {/* Project Card 2 */}
-          <div className="bg-gray-800 p-5 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold mb-2">🔐 Fraud Detection</h3>
-            <p className="text-sm text-gray-300 mb-2">
-              Detected fraud using Isolation Forest and Autoencoder. Includes full evaluation reports.
-            </p>
-            <a href="https://github.com/MuditNautiyal-21/Credit-Card-Fraud-Detection" className="text-blue-400 text-sm underline">View Project</a>
-          </div>
-
-          {/* Project Card 3 */}
-          <div className="bg-gray-800 p-5 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold mb-2">📉 Tesla Stock Analysis</h3>
-            <p className="text-sm text-gray-300 mb-2">
-              SQL-integrated EDA, regression, and trend analysis on Tesla stock data.
-            </p>
-            <a href="https://github.com/MuditNautiyal-21/tesla-stock-analysis-project-python" className="text-blue-400 text-sm underline">View Project</a>
-          </div>
-        </div>
-      </section>
+      <Projects />
 
       {/* Tech Stack */}
       <section className="px-8 py-16 max-w-4xl mx-auto">
