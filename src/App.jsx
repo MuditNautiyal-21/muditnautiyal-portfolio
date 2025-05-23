@@ -48,7 +48,7 @@ export default function App() {
             <a href="https://github.com/MuditNautiyal-21/tesla-stock-analysis-project-python" className="text-blue-400 text-sm underline">View Project</a>
           </div>
 
-          {/* Project Card 4 */}
+          {/* Project Card 3 */}
           <div className="bg-gray-800 p-5 rounded-xl shadow-md">
             <h3 className="text-xl font-bold mb-2">🍷 Wine Forecasting</h3>
             <p className="text-sm text-gray-300 mb-2">
@@ -56,8 +56,8 @@ export default function App() {
             </p>
             <a href="https://github.com/MuditNautiyal-21/Wine-Forecasting-Project" className="text-blue-400 text-sm underline">View Project</a>
           </div>
-          
-          {/* Project Card 3 */}
+
+          {/* Project Card 4 */}
           <div className="bg-gray-800 p-5 rounded-xl shadow-md">
             <h3 className="text-xl font-bold mb-2">🚗 Uber Drive Analysis</h3>
             <p className="text-sm text-gray-300 mb-2">
@@ -85,9 +85,44 @@ export default function App() {
       <section className="px-8 py-16 text-center">
         <h2 className="text-3xl font-semibold mb-4">📫 Contact</h2>
         <p className="text-gray-300 mb-2">📧 muditnautiyalusa@gmail.com</p>
-        <p className="text-blue-400 underline">
+        <p className="text-blue-400 underline mb-6">
           <a href="https://github.com/MuditNautiyal-21">GitHub</a> | <a href="https://linkedin.com/in/mudit-nautiyal">LinkedIn</a>
         </p>
+
+        <form name="contact" method="POST" data-netlify="true" className="grid gap-4 max-w-md mx-auto mt-8">
+          <input type="hidden" name="form-name" value="contact" />
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="p-2 rounded bg-gray-800 text-white border border-gray-700"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            className="p-2 rounded bg-gray-800 text-white border border-gray-700"
+          />
+
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+            className="p-2 rounded bg-gray-800 text-white border border-gray-700"
+          />
+
+          <button
+            type="submit"
+            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
+          >
+            Send Message
+          </button>
+        </form>
       </section>
     </main>
   );
