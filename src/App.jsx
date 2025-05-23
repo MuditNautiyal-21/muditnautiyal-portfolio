@@ -84,13 +84,10 @@ export default function App() {
       {/* Contact */}
       <section className="px-8 py-16 text-center">
         <h2 className="text-3xl font-semibold mb-4">📫 Contact</h2>
-        <p className="text-gray-300 mb-2">📧 muditnautiyalusa@gmail.com</p>
-        <p className="text-blue-400 underline mb-6">
-          <a href="https://github.com/MuditNautiyal-21">GitHub</a> | <a href="https://linkedin.com/in/mudit-nautiyal">LinkedIn</a>
-        </p>
 
-        <form name="contact" method="POST" data-netlify="true" className="grid gap-4 max-w-md mx-auto mt-8">
+        <form name="contact" method="POST" data-netlify="true" netlify className="grid gap-4 max-w-md mx-auto mt-8">
           <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="redirect" value="/thank-you.html" />
 
           <input
             type="text"
@@ -123,6 +120,10 @@ export default function App() {
             Send Message
           </button>
         </form>
+
+        <p className="text-gray-500 mt-6">
+          Or reach out directly: <a href="mailto:muditnautiyalusa@gmail.com" className="text-blue-400 underline">muditnautiyalusa@gmail.com</a>
+        </p>
       </section>
     </main>
   );
