@@ -85,9 +85,14 @@ export default function App() {
       <section className="px-8 py-16 text-center">
         <h2 className="text-3xl font-semibold mb-4">📫 Contact</h2>
 
-        <form name="contact" method="POST" data-netlify="true" netlify className="grid gap-4 max-w-md mx-auto mt-8">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you.html"
+          className="grid gap-4 max-w-md mx-auto mt-8"
+        >
           <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="redirect" value="/thank-you.html" />
 
           <input
             type="text"
@@ -122,7 +127,10 @@ export default function App() {
         </form>
 
         <p className="text-gray-500 mt-6">
-          Or reach out directly: <a href="mailto:muditnautiyalusa@gmail.com" className="text-blue-400 underline">muditnautiyalusa@gmail.com</a>
+          Or reach out directly:{" "}
+          <a href="mailto:muditnautiyalusa@gmail.com" className="text-blue-400 underline">
+            muditnautiyalusa@gmail.com
+          </a>
         </p>
       </section>
     </main>
