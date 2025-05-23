@@ -27,10 +27,28 @@ export default function App() {
       </section>
 
       {/* Projects */}
-      <section className="px-8 py-16 max-w-6xl mx-auto">
+      <section className="px-8 py-16 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-10">🔥 Featured Projects</h2>
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {/* Project Card 1 */}
+          <div className="bg-gray-800 p-5 rounded-xl shadow-md">
+            <h3 className="text-xl font-bold mb-2">🔐 Credit Card Fraud Detection</h3>
+            <p className="text-sm text-gray-300 mb-2">
+              Detected fraud using Isolation Forest and Autoencoder. Includes full evaluation reports.
+            </p>
+            <a href="https://github.com/MuditNautiyal-21/Credit-Card-Fraud-Detection" className="text-blue-400 text-sm underline">View Project</a>
+          </div>
+
+          {/* Project Card 2 */}
+          <div className="bg-gray-800 p-5 rounded-xl shadow-md">
+            <h3 className="text-xl font-bold mb-2">📉 Tesla Stock Forecasting</h3>
+            <p className="text-sm text-gray-300 mb-2">
+              Time series forecasting on Tesla stock prices using ARIMA & Prophet models.
+            </p>
+            <a href="https://github.com/MuditNautiyal-21/tesla-stock-analysis-project-python" className="text-blue-400 text-sm underline">View Project</a>
+          </div>
+
+          {/* Project Card 4 */}
           <div className="bg-gray-800 p-5 rounded-xl shadow-md">
             <h3 className="text-xl font-bold mb-2">🍷 Wine Forecasting</h3>
             <p className="text-sm text-gray-300 mb-2">
@@ -38,32 +56,14 @@ export default function App() {
             </p>
             <a href="https://github.com/MuditNautiyal-21/Wine-Forecasting-Project" className="text-blue-400 text-sm underline">View Project</a>
           </div>
-
-          {/* Project Card 2 */}
-          <div className="bg-gray-800 p-5 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold mb-2">🔐 Fraud Detection</h3>
-            <p className="text-sm text-gray-300 mb-2">
-              Detected fraud using Isolation Forest and Autoencoder. Includes full evaluation reports.
-            </p>
-            <a href="https://github.com/MuditNautiyal-21/Credit-Card-Fraud-Detection" className="text-blue-400 text-sm underline">View Project</a>
-          </div>
-
+          
           {/* Project Card 3 */}
           <div className="bg-gray-800 p-5 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold mb-2">📉 Tesla Stock Analysis</h3>
+            <h3 className="text-xl font-bold mb-2">🚗 Uber Drive Analysis</h3>
             <p className="text-sm text-gray-300 mb-2">
-              SQL-integrated EDA, regression, and trend analysis on Tesla stock data.
+              Performed exploratory data analysis on Uber ride data for insights and business recommendations.
             </p>
-            <a href="https://github.com/MuditNautiyal-21/tesla-stock-analysis-project-python" className="text-blue-400 text-sm underline">View Project</a>
-          </div>
-
-          {/* Project Card 4 */}
-          <div className="bg-gray-800 p-5 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold mb-2">📦 Sales Forecasting</h3>
-            <p className="text-sm text-gray-300 mb-2">
-              Time series forecasting using ARIMA and Prophet to predict future sales trends.
-            </p>
-            <a href="https://github.com/MuditNautiyal-21/Sales-Forecasting" className="text-blue-400 text-sm underline">View Project</a>
+            <a href="https://github.com/MuditNautiyal-21/Uber-Drive-Analysis" className="text-blue-400 text-sm underline">View Project</a>
           </div>
         </div>
       </section>
