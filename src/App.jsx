@@ -83,55 +83,16 @@ export default function App() {
 
       {/* Contact */}
       <section className="px-8 py-16 text-center">
-        <h2 className="text-3xl font-semibold mb-4">📫 Contact</h2>
-
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          action="/thank-you.html"
-          className="grid gap-4 max-w-md mx-auto mt-8"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            className="p-2 rounded bg-gray-800 text-white border border-gray-700"
-          />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            className="p-2 rounded bg-gray-800 text-white border border-gray-700"
-          />
-
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="5"
-            required
-            className="p-2 rounded bg-gray-800 text-white border border-gray-700"
-          />
-
-          <button
-            type="submit"
-            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
-          >
-            Send Message
-          </button>
-        </form>
-
-        <p className="text-gray-500 mt-6">
-          Or reach out directly:{" "}
-          <a href="mailto:muditnautiyalusa@gmail.com" className="text-blue-400 underline">
-            muditnautiyalusa@gmail.com
-          </a>
-        </p>
+      <h2 className="text-3xl font-semibold mb-4">📫 Contact</h2>
+      <p className="text-gray-300 mb-2">
+        Feel free to reach out to me directly via email:
+      </p>
+      <p className="text-blue-400 underline">
+        <a href="mailto:muditnautiyalusa@gmail.com">muditnautiyalusa@gmail.com</a>
+      </p>
+      <p className="text-blue-400 underline mt-2">
+        <a href="https://github.com/MuditNautiyal-21">GitHub</a> | <a href="https://linkedin.com/in/mudit-nautiyal">LinkedIn</a>
+      </p>
       </section>
     </main>
   );
