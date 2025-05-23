@@ -27,9 +27,9 @@ export default function App() {
       </section>
 
       {/* Projects */}
-      <section className="px-8 py-16 max-w-5xl mx-auto">
+      <section className="px-8 py-16 max-w-6xl mx-auto">
         <h2 className="text-3xl font-semibold mb-10">🔥 Featured Projects</h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-4 gap-6">
           {/* Project Card 1 */}
           <div className="bg-gray-800 p-5 rounded-xl shadow-md">
             <h3 className="text-xl font-bold mb-2">🍷 Wine Forecasting</h3>
@@ -55,6 +55,15 @@ export default function App() {
               SQL-integrated EDA, regression, and trend analysis on Tesla stock data.
             </p>
             <a href="https://github.com/MuditNautiyal-21/tesla-stock-analysis-project-python" className="text-blue-400 text-sm underline">View Project</a>
+          </div>
+
+          {/* Project Card 4 */}
+          <div className="bg-gray-800 p-5 rounded-xl shadow-md">
+            <h3 className="text-xl font-bold mb-2">📦 Sales Forecasting</h3>
+            <p className="text-sm text-gray-300 mb-2">
+              Time series forecasting using ARIMA and Prophet to predict future sales trends.
+            </p>
+            <a href="https://github.com/MuditNautiyal-21/Sales-Forecasting" className="text-blue-400 text-sm underline">View Project</a>
           </div>
         </div>
       </section>
